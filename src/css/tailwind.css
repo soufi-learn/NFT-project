@@ -1,0 +1,59 @@
+@import "./components/buttons.css";
+@import "./components/style.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-white bg-primary;
+    transition: all 0.3s;
+    font-family: varela;
+  }
+
+  @font-face {
+    font-family: "inter";
+    src: url("../assets/fonts/Inter-Medium.ttf");
+  }
+
+  @font-face {
+    font-family: "inter-bold";
+    src: url("../assets/fonts/Inter-SemiBold.ttf");
+  }
+
+  @font-face {
+    font-family: "varela";
+    src: url("../assets/fonts/varela-round.ttf");
+  }
+
+  h1 {
+    @apply mb-5 text-5xl leading-normal;
+  }
+
+  h2 {
+    @apply mb-4 text-4xl leading-normal;
+  }
+
+  h3 {
+    @apply mb-3 text-3xl leading-normal;
+  }
+
+  h4 {
+    @apply mb-2 text-2xl leading-normal;
+  }
+
+  h5 {
+    @apply text-xl leading-normal;
+  }
+
+  h6 {
+    @apply text-lg leading-normal;
+  }
+}
+
+@layer components {
+  .container {
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+}

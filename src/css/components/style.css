@@ -1,0 +1,22 @@
+/* HEADER STYLES */
+.main-header {
+  height: calc(100vh - 102px);
+}
+
+.header-ellipse {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  pointer-events: none;
+}
+
+.provider-container {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(
+    269deg,
+    rgba(187, 71, 166, 0.1) 0%,
+    rgba(78, 109, 216, 0.1) 100%
+  );
+}
