@@ -7,6 +7,9 @@ module.exports = {
       colors: {
         primary: "#0A0F29",
       },
+      fontFamily: {
+        "inter-bold": "inter-bold",
+      },
     },
   },
   plugins: [],

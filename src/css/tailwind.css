@@ -57,3 +57,37 @@
     padding: 0 1rem;
   }
 }
+
+@layer utilities {
+  .gradient-border {
+    position: relative;
+    background: #0a0f29;
+    border-radius: 10px;
+  }
+
+  .gradient-border::after {
+    position: absolute;
+    content: "";
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    background: linear-gradient(
+      to top,
+      rgba(187, 71, 166, 0.7),
+      rgba(78, 109, 216, 0.7)
+    );
+    border-radius: 10px;
+    z-index: -1;
+  }
+
+  .border-b-gradient {
+    border-bottom: 2px solid;
+    border-image: linear-gradient(
+        to right,
+        rgba(78, 108, 216, 0.5),
+        rgba(187, 71, 166, 0.386)
+      )
+      1;
+  }
+}
